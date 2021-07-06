@@ -1,0 +1,9 @@
+Hora de praticarmos
+
+Vamos falar sobre livros, agora. Aqueles pesados volumes de papel e letras impressas.
+
+    1. Crie uma classe Book, com um título e um autor.
+    2. Adicione um método readPage() que aumente o valor de uma variável privada currentPage, por 1.
+    3. Crie uma subclasse de Book e dê o nome de eBook.
+    4. eBook também aceita um formato, cujo padrão é "text".
+    5. Nos eBooks, a contagem de palavras é mais importante do que a contagem de páginas. Substitua o método readPage() para aumentar a contagem de palavras em 250, que é o número médio de palavras por página dos tempos da máquina de escrever.

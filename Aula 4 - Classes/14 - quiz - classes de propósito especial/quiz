@@ -1,0 +1,18 @@
+Hora de praticarmos
+
+Você usou object na aula anterior e no último quiz.
+
+Você já conhece enums, e este é o código para Color como enum:
+
+        enum class Color(val rgb: Int) {
+           RED(0xFF0000), GREEN(0x00FF00), BLUE(0x0000FF);
+        }
+
+    1. Em SpiceColor, altere o tipo de color de String para a classe Color e defina a respectiva cor em YellowSpiceColor.
+        Dica: o código cromático para o amarelo é YELLOW(0xFFFF00)
+
+    2. Faça com que Spice seja uma classe selada.
+        Qual o efeito prático disso?
+        Qual a utilidade?
+
+        - Fazer com que Spice seja uma classe selada, ajuda a manter todas as especiarias juntas em um único arquivo. 

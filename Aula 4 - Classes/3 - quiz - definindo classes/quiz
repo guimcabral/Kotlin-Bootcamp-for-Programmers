@@ -1,0 +1,11 @@
+Hora de praticarmos
+
+Anteriormente, criamos e filtramos uma lista de especiarias. É preferível que as especiarias sejam representadas como objetos, e não como strings. E, justamente, por serem objetos, é que podemos realizar coisas diferentes com elas, como cozinhar.
+
+Para recapitularmos, façamos uma classe Spice simples. Isso servirá como ponto de partida para a próxima prática.
+
+    1. Crie a classe SimpleSpice.
+    2. Deixe que a classe seja uma propriedade com uma String para o nome da especiaria, e uma outra String para o nível de picância.
+    3. Defina o nome como curry e a picância como mild (suave).
+    4. Utilizar uma spring para spiciness (picância) é bom para os usuários e ruim para os cálculos. Adicione uma propriedade heat à classe com um getter que retorna um valor numérico para spiciness. Para mild, use o valor 5.
+    5. Crie uma instância de SimpleSpice e imprima o name e heat.

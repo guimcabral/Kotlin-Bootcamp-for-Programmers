@@ -1,0 +1,5 @@
+Hora de praticarmos
+
+    1. Crie uma classe de dados simples, SpiceContainer, que contenha apenas uma especiaria.
+    2. Atribua uma propriedade label para SpiceContainer que seja derivada do nome da especiaria.
+    3. Crie alguns containers com especiarias e imprima os rótulos.

@@ -1,0 +1,11 @@
+Hora de praticarmos
+
+Vamos melhorar a nossa classe SimpleSpice para que possamos ter as várias especiarias separadas pelos seus diferentes níveis de picância.
+
+    1. Crie uma nova classe Spice.
+    2. Transmita um argumento String obrigatório para name e um argumento String para o nível despiciness (picância), onde o valor padrão seja mild para o que não for picante.
+    3. Adicione uma variável heat à classe, com um getter que retorne um valor numérico para cada tipo de spiciness.
+    4. Em vez da lista de especiarias como Strings usada anteriormente, crie uma lista de objetos Spice e atribua a cada objeto um nome e um nível de spiceness (picância).
+    5. Adicione um bloco init que imprima os valores do objeto logo após ser criado. Crie um spice.
+    6. Crie uma lista de especiarias que sejam picantes ou menos picantes. Dica: Utilize um filtro e a propriedade heat.
+    7. Sal é uma especiaria muito comum. Crie uma função de apoio chamada makeSalt().

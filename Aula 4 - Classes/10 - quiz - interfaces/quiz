@@ -1,0 +1,55 @@
+Hora de praticarmos
+
+Abstrato e interface
+Voltemos às especiarias. Faça de Spice uma classe abstrata e crie algumas subclasses que sejam, de fato, especiarias.
+
+   1. É mais fácil fazer um novo pacote: Spices com um arquivo e Spice que tenha uma função main().
+   2. Copie e cole o código da sua classe Spice dentro desse arquivo.
+   3. Faça com que Spice seja abstrata.
+   4. Crie uma subclasse Curry que possa ter diferentes níveis de picância. Dessa forma, não usaremos o valor padrão, passaremos apenas o valor da picância.
+   5. Antes de serem utilizadas, as especiarias são processadas de maneiras diferentes. Adicione um método abstrato prepareSpice ao Spice e implemente-o em Curry.
+   6. O curry é moído, então vamos chamar o método de grind(), que significa “moer”, em inglês. No entanto, a moagem não é exclusiva para o curry, ou mesmo para as especiarias, e é sempre feita em um moedor. Portanto, podemos criar uma interface Grinder, que implemente o método grind(). Faça isso!
+   7. Agora, inclua a interface Grinder à classe Curry.
+
+Delegação
+Use o código dado na aula de orientação para adicionar a cor amarela ao Curry.
+
+      fun main(args: Array<String>) {
+         delegate()
+      }
+
+      fun delegate() {
+         val pleco = Plecostomus()
+         println("Fish has has color ${pleco.color}")
+         pleco.eat()
+      }
+
+      interface FishAction {
+         fun eat()
+      }
+
+      interface FishColor {
+         val color: String
+      }
+
+      object GoldColor : FishColor {
+         override val color = "gold"
+      }
+
+      class PrintingFishAction(val food: String) : FishAction {
+         override fun eat() {
+             println(food)
+         }
+      }
+
+      class Plecostomus (fishColor: FishColor = GoldColor):
+             FishAction by PrintingFishAction("eat a lot of algae"),
+             FishColor by fishColor
+
+   1. Crie uma interface SpiceColor que tenha uma propriedade color. Use uma string para a cor.
+   2. Crie uma subclasse singleton YellowSpiceColor, usando a palavra-chave object. Assim, todas as instâncias de Curry e das outras especiarias poderão usar essa mesma instância YellowSpiceColor.
+   3. Adicione uma propriedade color a Curry do tipo SpiceColor, e configure o valor padrão para YellowSpiceColor.
+   4. Adicione SpiceColor como uma interface e deixe que seja por cor.
+   5. Crie uma instância de Curry e imprima sua cor. A cor é uma propriedade comum a todas as especiarias. Portanto, você pode movê-la para a classe pai.
+   6. Mude seu código de forma que a interface SpiceColor seja adicionada à classe Spice e herdada por Curry.
+
