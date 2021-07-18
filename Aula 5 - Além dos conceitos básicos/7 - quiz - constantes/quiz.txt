@@ -1,0 +1,6 @@
+Hora de praticarmos:
+
+    1. Crie uma constante de nível superior determinando o número máximo de livros que uma pessoa poderá pegar emprestado.
+    2. Dentro da classe Book, crie um método canBorrow() que retorne true ou false tendo como base o número máximo de livros que o usuário tomou emprestado.
+    3. Crie um objeto Constants que forneça constantes ao livro. Para esse exemplo. forneça BASE_URL para todos os livros do catálogo da biblioteca. Dentro de Book, adicione um método printUrl que crie e imprima uma URL composta de BASE_URL, o título do livro e “.html ”.
+    4. A URL base interessa muito para a classe Book. E assim sendo, faz sentido limitar o seu alcance à classe Book. Use um objeto complementar para definir a constante em Book.

@@ -1,0 +1,23 @@
+Hora de praticarmos
+
+Usar hierarquias de tipos com classes genéricas segue um padrão bem básico que apresentamos no segmento anterior. Havia muito material introduzindo genéricos, mas basicamente, a construção se resume aos seguintes passos:
+
+    - Crie uma hierarquia de tipo/classe. O principal é não específico e os subtipos/subclasses são especializações.
+    - Há pelo menos uma propriedade compartilhada entre as classes/tipos com um valor diferente a depender do subtipo (caso contrário, é inútil ter os subtipos).
+    - Em seguida, temos uma classe que usa todos os subtipos e realiza ações diferentes usando como base os valores das propriedades do subtipo.
+
+Vamos colocar isso em prática usando materiais de construção e um prédio que precise desses insumos.
+
+    1. Crie um novo pacote e arquivo e chame-os de Buildings.
+    2. Crie uma classe BaseBuildingMaterial com uma propriedade numberNeeded definida como 1. Você sempre precisa de 1 do material base.
+    3. Crie duas subclasses: Wood e Brick. Para BaseBuildingMaterial você precisa de 4 unidades de madeira ou 8 unidades de tijolo. Agora, você tem uma hierarquia de tipos.
+    4. Crie uma classe genérica Building que pode considerar qualquer material de construção como argumento (e apenas materiais de construção).
+    5. Um edifício exige sempre 100 materiais de base. Adicione uma propriedade baseMaterialsNeeded e defina-a como 100
+    6. Adicione outra propriedade, actualMaterialsNeeded e use uma função de uma linha para que calcule de numberNeeded do material transmitido.
+    7. Adicione um método build() que imprima o tipo e o número de materiais necessários.
+        Dica: Use reflexão para obter a classe e nome simples: 
+
+            instance::class.simpleName
+
+    8. Crie uma função principal e crie um edifício usando Wood.
+    9. Se você fez isso de forma correta, ao executar main(), imprimirá algo como “400 Wood required”.

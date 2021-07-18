@@ -1,0 +1,11 @@
+Hora de praticarmos
+
+É importante saber, por exemplo, o peso de um livro para envio. E esse peso pode mudar porque, em alguns casos, as páginas são danificadas e a contagem acaba sendo alterada. Embora o cálculo do peso possa ser definido como um método, é mais considerada como uma função auxiliar. Além disso, seria um sofrimento para um livro ter um método que rasgasse suas páginas.
+
+    1. Adicione uma propriedade pages a Book.
+    2. Crie uma função de extensão em Book que retorne o peso de um livro seguindo o seguinte cálculo: a contagem de páginas multiplicada por 1,5 grama.
+    3. Crie outra extensão tornPages() que tenha o número de páginas danificadas como argumento e altere a contagem de páginas do livro.
+    4. Escreva uma classe Puppy com um método playWithBook() que use um livro como argumento e remova um número aleatório de páginas do livro.
+    5. Crie um puppy e dê um 'book' para ele brincar até que não haja mais páginas.
+
+Observação: Se não quiser dar ao seu puppy um book, crie uma classe puzzle toy e preencha-a com treats.

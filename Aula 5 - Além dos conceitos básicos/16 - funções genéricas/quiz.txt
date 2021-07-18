@@ -1,0 +1,5 @@
+Hora de praticarmos
+
+Crie uma função genérica para o tipo BaseBuildingMaterial e chame-a de isSmallBuilding, que recebe um Building com um material de construção T como argumento. Se os materiais necessários forem inferiores a 500, imprima "small building", caso contrário, imprima "large building".
+
+Nota: Para esta função, IntelliJ recomenda que não inline a função. De maneira geral, ao criar uma função genérica, siga a recomendação do IDE sobre inlining.

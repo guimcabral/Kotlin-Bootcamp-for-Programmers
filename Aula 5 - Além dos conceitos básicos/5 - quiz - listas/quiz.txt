@@ -1,0 +1,18 @@
+Hora de praticarmos
+
+Raramente um livro aparecerá sozinho, e raramente um autor escreve apenas uma obra.
+
+    1. Crie um Set de título de livros chamado allBooks, de William Shakespeare, por exemplo.
+    2. Crie um Map chamado library que associe o conjunto de livros (allBooks) ao autor.
+    3. Use as funções de lista any() em library para checar se algum dos livros é Hamlet.
+
+    Dicas:
+        - any() é aplicada a uma lista e demanda um lambda como seu argumento. Exemplo:
+            
+            myList.any {it.contains(“name”)}
+
+        - add() é uma função útil que checa se uma chave está em um mapa, em caso positivo, retorna um valor. Caso contrário, ele adicionará ao mapa a chave com o valor fornecido.
+        - mapOf() pode ser útil.
+
+    4. Crie outro Map, moreBooks, e adicione um título/autor.
+    5. Use add() para checar se um título está no mapa ou não. Em caso negativo, adicione-o.

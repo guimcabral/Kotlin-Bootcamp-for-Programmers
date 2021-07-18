@@ -1,0 +1,9 @@
+Hora de praticarmos
+
+Vamos analisar um exemplo de como obter informações sobre um livro no formato de par (pair). De maneira geral, buscamos informações sobre o título, autor ou o ano em que foi escrito.
+
+    1. Vamos criar uma classe básica de livros, com um título, autor e ano. Obviamente, você pode obter cada propriedade separadamente.
+    2. Crie um método que retorne o título e o autor como um Pair.
+    3. Crie um método que retorne o título, o autor e o ano como um Triple. Utilize a documentação e descubra como utilizar Triple.
+    4. Crie uma instância book.
+    5. Imprima a informação sobre o livro em uma frase, como: “Aqui está o livro X, escrito por Y em Z.”
