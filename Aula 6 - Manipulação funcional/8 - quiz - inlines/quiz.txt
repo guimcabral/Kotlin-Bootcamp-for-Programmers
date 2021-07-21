@@ -1,0 +1,39 @@
+Hora de praticarmos
+
+Nessa prática, você terminará seu jogo usando funções de ordem superior, isto é, uma função que usa funções como argumento.
+
+    1. Na classe game, crie uma função move() que demande um argumento chamado where, que é um lambda sem argumentos que retorna Unit.
+
+    Dica: Declarando uma função que demanda um lambda como seu argumento:
+
+        fun move(where: () -> Boolean )
+
+    2. Dentro de move (), recorra ao lambda transmitido.
+    3. Na classe Game, crie uma função makeMove() que receba um argumento String anulável e não retorne nada.
+    4. Dentro de makeMove, teste se a String é uma das quatro direções e recorra a move() com o lambda correspondente. Caso contrário, recorra a move() com end.
+
+    Dica: Você pode acionar a função dessa maneira:
+
+        move(north)
+
+    5. Em main(), adicione um loop while que seja sempre verdadeiro.
+    6. Dentro do loop, imprima instruções ao jogador:
+
+        print("Enter a direction: n/s/e/w:")
+
+    7. Acione makeMove() com os conteúdos de input dos usuários via readLine()
+    8. Remova o código para testar a primeira versão do seu jogo.
+    9. Execute o programa.
+
+Desafio:
+
+Crie um "mapa" simples e exiba uma descrição da localização do usuário no jogo. Analise o seguinte:
+
+    - Use uma classe Location que, para rastrear a localização, demande um padrão de largura e altura. 4x4 é facilmente gerenciável.
+    - Crie uma matriz como esta:
+
+        val map = Array(width) { arrayOfNulls<String>(height) }
+
+    - Use um bloco init para inicializar seu mapa com as descrições para cada localização.
+    - Quando você move(), automaticamente updateLocation(). Há alguma matemática envolvida para evitar null-pointer exceptions e impedir que o usuário saia do mapa. rem () e absoluteValue são úteis para isso.
+    - Quando terminar, feche o código e envie para um amigo testar seu primeiro jogo Kotlin.

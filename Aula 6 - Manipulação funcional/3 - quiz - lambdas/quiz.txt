@@ -1,0 +1,26 @@
+Hora de praticarmos
+
+Nesse exercício, você escreverá a primeira parte de um jogo de funções de ordem superior. Você terá que implementar tudo, exceto as funções de ordem superior. Vamos começar!
+
+    1. Crie um novo arquivo.
+    2. Crie uma classe enum Directions que tenha as direções: NORTH, SOUTH, EAST e WEST, além de START, e END.
+    3. Crie uma classe Game.
+    4. Dentro de Game declare a variável path que será uma lista mutável de Direction. Inicialize com um elemento START.
+    5. Crie quatro lambas: north, south, east e west. É isso que dará direcionamento ao trajeto.
+    6. Adicione outro lambda: end. Isso servirá para:
+        - Adiciona END ao trajeto
+        - Imprime “Game Over”
+        - Imprime o trajeto
+        - Evidencia o trajeto
+        - Retorna false
+    7. Crie uma função principal
+    8. Dentro de main(), crie uma instância de Game.
+    9. Para testar seu código, imprima o trajeto em main() e recorra a north, east, south, west e end. Por fim, imprima o trajeto novamente.
+
+Você verá isto:
+
+    > [START]
+    Game Over: [START, NORTH, SOUTH, EAST, WEST, END]
+    []
+
+A última prática desse curso será a finalização desse jogo.

@@ -1,0 +1,9 @@
+Hora de praticarmos
+
+Crie uma extensão em List utilizando uma função de ordem superior que retorne todos os números da lista divisíveis por 3. Comece criando uma função de extensão em List que receba um lambda em Int e o aplique em cada item da lista. Quando o lamda retornar zero, inclua o item no output. Por exemplo, esta lista:
+
+	val numbers = listOf<Int>(1,2,3,4,5,6,7,8,9,0)
+
+Deve retornar
+
+	> [3, 6, 9, 0]
